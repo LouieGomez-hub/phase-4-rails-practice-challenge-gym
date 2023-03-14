@@ -9,4 +9,9 @@ class ClientsController < ApplicationController
         end
     end
 
+    def index
+        client = Client.all
+        render json: client
+    end
+
 end

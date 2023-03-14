@@ -19,4 +19,9 @@ class GymsController < ApplicationController
         end
     end
 
+    def index
+        gym = Gym.all
+        render json: gym
+    end
+
 end
